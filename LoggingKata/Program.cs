@@ -79,10 +79,9 @@ namespace LoggingKata
 
                     //calculate the distance
                     double checkDistance = corA.GetDistanceTo(corB);
-
                     if (checkDistance > distance)
                     {
-                        checkDistance = distance;
+                        distance = checkDistance;
                         tacoBell1 = locA;
                         tacoBell2 = locB;
                         logger.LogInfo($"distance is updated");
@@ -98,8 +97,8 @@ namespace LoggingKata
 
 
                 
-                logger.LogInfo($"The two taco bells that are distant apart are {tacoBell1.Name} at {tacoBell1.Location.Latitude}, and {tacoBell2.Location.Longitude} and {tacoBell2.Name} at {tacoBell2.Location.Latitude} and {tacoBell2.Location.Longitude}");
-                logger.LogInfo($"Two taco bells are {distance/1000} km away from each other.");
+                logger.LogInfo($"The first taco bell is {tacoBell1.Name} at {tacoBell1.Location.Latitude}, and {tacoBell1.Location.Longitude}");
+                logger.LogInfo($"The second taco bell is {tacoBell2.Name} at {tacoBell2.Location.Latitude} and {tacoBell2.Location.Longitude}");
 
             }
         }
