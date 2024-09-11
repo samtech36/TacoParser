@@ -99,6 +99,7 @@ namespace LoggingKata
                 
                 logger.LogInfo($"The first taco bell is {tacoBell1.Name} at {tacoBell1.Location.Latitude}, and {tacoBell1.Location.Longitude}");
                 logger.LogInfo($"The second taco bell is {tacoBell2.Name} at {tacoBell2.Location.Latitude} and {tacoBell2.Location.Longitude}");
+                logger.LogInfo($"The greatest distance between the two is {Math.Round(distance)} meters");
 
             }
         }
