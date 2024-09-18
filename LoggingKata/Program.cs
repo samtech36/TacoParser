@@ -91,14 +91,17 @@ namespace LoggingKata
                 logger.LogInfo("Distance check is completed!");
                 
                 // NESTED LOOPS SECTION COMPLETE ---------------------
-
-                // Once you've looped through everything, you've found the two Taco Bells farthest away from each other.
-                // Display these two Taco Bell locations to the console.
+                
                 
 
                 
 
             }
+            
+            // Once you've looped through everything, you've found the two Taco Bells farthest away from each other.
+            // Display these two Taco Bell locations to the console.
+            
+            
             logger.LogInfo($"The first taco bell is {tacoBell1.Name} at {tacoBell1.Location.Latitude}, and {tacoBell1.Location.Longitude}");
             logger.LogInfo($"The second taco bell is {tacoBell2.Name} at {tacoBell2.Location.Latitude} and {tacoBell2.Location.Longitude}");
             logger.LogInfo($"The greatest distance between the two is {Math.Round(distance)} meters");
